@@ -2,15 +2,38 @@
   text-align: center;
 }
 
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #46686e;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: calc(4px + 2vmin);
+  color: white;
+}
+
+.App-footer {
+  background-color: #eaecec;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
+.App-main{
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.Logo {
+  display: flex;
+  align-items: center;
+}
