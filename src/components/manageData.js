@@ -5,10 +5,16 @@ function getData() {
     setTimeout(() => resolve(rawData), 1000);
   });
 }
-async function getDataByCategory() {
+export async function manageData() {
   const data = await getData();
-  let category = {};
-  if (category.hasOwnProperty(data.category)) {
-  }
+  let getDataByCategory = {};
+  data.forEach((question) => {
+    if (getDataByCategory.hasOwnProperty(question.category)) {
+      getDataByCategory[question.category].push(question.name);
+    } else {
+      getDataByCategory[question.category] = [question.name];
+    }
+  });
+
+  return getDataByCategory;
 }
-getDataByCategory();
