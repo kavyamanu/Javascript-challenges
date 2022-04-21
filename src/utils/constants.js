@@ -55,4 +55,9 @@ export const rawData = [
     name: "Array Methods",
     category: "JavaScript",
   },
+  {
+    id: "array-methods",
+    name: "Array Methods",
+    category: "JavaScript",
+  },
 ];

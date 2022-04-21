@@ -1,12 +1,11 @@
-import {rawData} from "../../utils/constants"
 
-function getData() {
+function getData(questions) {
   return new Promise(function (resolve, reject) {
-    setTimeout(() => resolve(rawData), 1000);
+    setTimeout(() => resolve(questions), 1000);
   });
 }
-export async function manageData() {
-  const data = await getData();
+export async function manageData(rawData) {
+  const data = await getData(rawData);
   let getDataByCategory = {};
   data.forEach((question) => {
     if (getDataByCategory.hasOwnProperty(question.category)) {
@@ -15,6 +14,6 @@ export async function manageData() {
       getDataByCategory[question.category] = [question.name];
     }
   });
-
   return getDataByCategory;
+
 }
