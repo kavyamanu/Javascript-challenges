@@ -1,6 +1,7 @@
 import './App.css';
 import {Logo} from "./components/Logo"
 import { HeaderNavigation } from "./components/HeaderNavigation";
+import { FooterNavigation } from "./components/FooterNavigation";
 import { Challenges } from "./components/Challenges";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
       <main className="App-main">
         <Challenges />
       </main>
-      <footer className="App-footer">this is footer</footer>
+      <footer className="App-footer"><FooterNavigation/></footer>
     </div>
   );
 }

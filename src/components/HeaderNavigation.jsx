@@ -3,11 +3,24 @@ import "./HeaderNavigation.css";
 export const HeaderNavigation = () => {
   return (
     <li className="NavItems">
-      <a href="https://github.com/kavyamanu/Javascript-challenges">
-        challenges
+      <a
+        className="headerLinks"
+        href="https://github.com/kavyamanu/Javascript-challenges"
+      >
+        Challenges
       </a>
-      <a href="https://github.com/kavyamanu/Javascript-challenges">blog</a>
-      <a href="https://github.com/kavyamanu/Javascript-challenges">Github</a>
+      <a
+        className="headerLinks"
+        href="https://github.com/kavyamanu/Javascript-challenges"
+      >
+        blogs
+      </a>
+      <a
+        className="headerLinks"
+        href="https://github.com/kavyamanu/Javascript-challenges"
+      >
+        GitHub
+      </a>
     </li>
   );
 };

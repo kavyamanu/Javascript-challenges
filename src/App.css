@@ -6,6 +6,9 @@
   background-color: #46686e;
   min-height: 10vh;
   display: flex;
+  top: 0;
+  width: 100%;
+  position: fixed;
   flex-direction: row;
   justify-content: space-around;
   font-size: calc(4px + 2vmin);
@@ -16,16 +19,17 @@
   background-color: #eaecec;
   min-height: 10vh;
   display: flex;
+  bottom: 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: black;
 }
 
-.App-main{
-  min-height: 80vh;
+.App-main {
   display: flex;
+  padding-top: 20vh;
+  min-height: 80vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;

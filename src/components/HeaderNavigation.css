@@ -2,11 +2,13 @@
   display: flex;
   align-items: center;
 }
-a {
+.headerLinks {
   padding-right: 3rem;
   text-decoration: none;
+  align-items: center;
+  width: 100%;
   color: white;
 }
-a:hover {
+.headerLinks:hover {
   text-decoration: underline;
 }

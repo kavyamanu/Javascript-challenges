@@ -1,0 +1,14 @@
+.NavItems {
+  display: flex;
+  align-items: center;
+}
+.footerLinks, .copyright{
+  text-decoration: none;
+  padding-right: 2rem;
+  font-size: 1.25rem;
+  color: #46686e;
+}
+
+.footerLinks:hover {
+  text-decoration: underline;
+}
